@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.ProcessesInfoController">
+   <children>
+      <TableView fx:id="processTableView" layoutX="-1.0" prefHeight="629.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="210.0" text="Name" fx:id="nameColumn"/>
+          <TableColumn prefWidth="167.0" text="PID" fx:id="pidColumn"/>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

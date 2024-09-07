@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.cpuInfoController">
+    <TabPane fx:id="cpuTabPane" layoutX="78.0" layoutY="14.0" prefHeight="400.0" prefWidth="373.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Tab fx:id="cpuInfoTab" text="Information">
+         <content>
+            <Label fx:id="cpuInfoLabel" alignment="TOP_LEFT" prefHeight="184.0" prefWidth="378.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </content></Tab>
+        <Tab fx:id="cpuLoadingTab" text="CPU loading" onSelectionChanged="#onCPULoadingTabSelected">
+         <content>
+            <Label fx:id="cpuLoadingLabel" alignment="TOP_LEFT" prefHeight="184.0" prefWidth="378.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </content></Tab>
+    </TabPane>
+</AnchorPane>

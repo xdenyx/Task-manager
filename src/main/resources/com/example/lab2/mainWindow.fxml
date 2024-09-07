@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="419.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.SystemInfoController">
+    <BorderPane layoutY="-2.0" prefHeight="25.0" prefWidth="567.0" AnchorPane.bottomAnchor="394.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+       <top>
+           <MenuBar prefWidth="567.0" BorderPane.alignment="CENTER">
+               <Menu mnemonicParsing="false" text="OS">
+                   <MenuItem mnemonicParsing="false" onAction="#onGetMenuOSInfoClick" text="OS information" />
+               </Menu>
+               <Menu mnemonicParsing="false" text="CPU">
+                   <MenuItem fx:id="cpuInfoMenuItem" mnemonicParsing="false" onAction="#onGetMenuCPUInfoClick" text="Information" />
+                   <MenuItem fx:id="cpuLoadMenuItem" mnemonicParsing="false" onAction="#onGetMenuCPUInfoClick" text="CPU loading" />
+               </Menu>
+            <Menu mnemonicParsing="false" text="Memory">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onGetMemoryInfoClick" text="Memory info" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Processes">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Processes info" onAction="#onGetProcInfoClick"/>
+              </items>
+            </Menu>
+           </MenuBar>
+       </top>
+    </BorderPane>
+    <Label fx:id="SystemInfoLabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="25.0" prefHeight="389.0" prefWidth="888.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+    </Label>
+</AnchorPane>
